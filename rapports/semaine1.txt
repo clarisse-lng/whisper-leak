@@ -1,0 +1,32 @@
+Compte-rendu de la réunion du 09/02:
+
+    -> Pour le rendu du 15 mars :
+
+        - Résumé de quelques pages pour la comprehénsion du problème.
+        - État de l'art découle des articles, rappel du contexte et la motivation (problematique), ce qui a deja ete fait et comment, pistes explorees ou qu'on va explorer par la suite
+        - Objectifs à fixer: 
+                        - Comprehénsion des articles
+                        - Construction d'un dataset
+                        - Se fixer une tache de machine learning, selon les donnés qu'on arrive à recuperer.
+                        - Parler des limites que les articles proposent (c'est un P-O-F ou un jouet qui tout le monde peut faire)
+                        - Voir s'on arrive à reproduire les resultats avec d'autres méthodes.
+        
+        Idees pour future classification binaire :
+                        
+                        - Contenus interdits par le chatbot (ex : violence etc)
+        
+        
+    -> Prochaines étapes
+    
+        - Pour la prochaine réunion -> faire des slides pour expliquer chaque article ainsi que ce qu'on trouve interessant. 
+          l'idée est vraiement quelque chose qui compare un peu les articles. (En priorité) 
+            
+            - Dans un tableau par article, prendre en compte la variance des datasets.
+        
+        - Commencer à travailler sur le git.
+    
+        - Utilisation d'une API pour faire un zero shot et classifier les topics de Quora donnees dans les experiments d'une façon généraliste avec comme but de détécter des grosses variances sur les sujets.
+        - Utilisation d'un modèle en local pour la même tâche.
+            - Tracer un histogramme pour chaque methode. -> Variances des topics
+            - Créer un tableau de différences
+            
