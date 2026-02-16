@@ -1,0 +1,32 @@
+Ce qu'on code sous la forme de token : mot entier ou lettre toute seule ou groupe de lettres (birgamme:trigramme), expression entière
+
+Tps prédiction cst pour émettre le token suivant
+
+Longueur paquet lié au temps d'émission
+
+embedding non connu 
+
+nb caracteres différents entre chaque token (environ 3 lettres par token)
+
+Essai sur tokenizer (openai) pour tester le nb de tokens 
+
+
+"""Je suis un porf, je prepare un cours""" <- Partie fixe (cache)
+"""Ajd on parle de perceptron""" <- Variable
+
+Fixe -> Variable on trouve le cache
+VAriable -> Fixe on trouvera pas le cache
+
+Test sur différents sujets sur le meme modele que Whisper Leak
+
+Generation de prompts,est ce qu'on arrive a faire fonctionner le code du git (interception -quoi et comment-, génération des donnees, est ce qu'on peut entrainer
+
+--> Est ce qu'on peut reutiliser ou faut recoder
+
+--> Est ce qu'on arrive a obtenir les memes performances sur des sujets différents?
+--> Est ce qu'on peu generer des donnes sur des classes + variees ou plus interessantes ? (+ que classif binaire)
+
+refaire les captures avec les techniques de mitigation pour voir la nvl perf
+
+--> Classifieur local + classifieur openAI pour classer les promtps négatifs
+
