@@ -30,3 +30,7 @@ refaire les captures avec les techniques de mitigation pour voir la nvl perf
 
 --> Classifieur local + classifieur openAI pour classer les promtps négatifs
 
+- recreate the results and verify the performance of the methods from the whisper leak article 
+- consider more complex classes to potentially achieve a better real world impact, test and evaluate new results/performance 
+- investigate the proposed mitigations, test the methods with these mitigations in mind 
+- reflect on other potential mitigations
