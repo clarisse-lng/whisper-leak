@@ -1,0 +1,47 @@
+verif a la main sur 15 exemples les resultats des classifieurs
+
+raconter les essais sur le rapport
+
+refaire le zero shot avec les memes labels que le modele local, labels.json bien pour expliquer le contenu attendu
+
+rapport presque fini pour le 09/03 afin de pouvoir le revoir
+- espliquer le sujet (art. whisperleak principalement)
+- pq c'est important (sujets imp)
+- pas le seul papier sur les fuites de donnees sur llms (mentionner les autres articles)
+- tt le tps predire les contenus 
+- papiers attaquent pas le chiffrement et seulement ce qui est observable, timing/token avec des exemples
+- insister sur les features
+- but : reproduire ce qui est fait dans l'article et rendre l'attaque plus credible/realiste
+- pistes/choses envisagees pour la suite : 
+--> essayer whisperleak avec des suejts plus inte
+--> test avec mitigations
+--> strategies pour contourner / implementer
+- code dispo et dataset dispo et fournis 
+- interception du trafic a faire dans la suite
+- reprod avec des modeles existants
+- comparaison des histogrammes
+==> refaire les histogrammes et les comparer dans le rapport 
+
+figures a faire :
+- une pour expliquer les echanges (avec les tokens et le decoupage/streaming)
+- token (decoupage a expliquer) ==> tokenizer 
+
+mettre en evidence le lien dans la figure avec les tps entre les paquets de token + taille en paquets d'octets
+brouiller sur la figure l'échange
+
+clarifier les repeats dans les prompts.json (large1, large2)
+
+llm tres instable par rapport aux entrees (espaces etc assez influents)
+impact sur la sortie avec des rajotus d'espace etc
+
+fouiller dans le rep pour trv interets large1 et large2 
+
+claude haiku openrouter pour experiences a plus large echelle pour tester plusieurs modeles (pour explorer plus largement les choses)
+fonctionne comme une proxy, implementation differente 
+
+tourner en local avec ollama pour l'instant
+
+whisperleak basé sur API 
+interface web a explorer (car plus prompt aux attaques pour un utilisateur lambda)
+
+landchain (?) a regarder pour un autre module de test
