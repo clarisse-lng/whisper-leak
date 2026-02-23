@@ -1,0 +1,23 @@
+{
+  "animals": 145,
+  "inconclusive": 914,
+  "home_lifestyle": 87,
+  "business_finance": 1163,
+  "relationships_social": 595,
+  "society_culture": 854,
+  "health_medical": 786,
+  "science": 997,
+  "consumer_services": 123,
+  "politics_government": 615,
+  "education_learning": 1187,
+  "career_employment": 737,
+  "language_translation": 225,
+  "food_cooking": 219,
+  "arts_entertainment": 863,
+  "travel_geography": 236,
+  "law_legal": 277,
+  "automotive_transport": 189,
+  "technology": 1250,
+  "sports_recreation": 151,
+  "fashion_beauty": 103
+}

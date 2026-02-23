@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "inconclusive": "Query is ambiguous, unclear, or does not clearly fit any category",
+
+    "animals": "Pets, wildlife, animal behavior, veterinary topics",
+
+    "arts_entertainment": "Movies, TV, music, books, celebrities, performing arts, gaming media",
+
+    "automotive_transport": "Cars, driving, vehicle maintenance, public transport, transportation systems",
+
+    "business_finance": "Companies, entrepreneurship, marketing, investing, banking, economics",
+
+    "career_employment": "Jobs, resumes, interviews, workplace issues, career development",
+
+    "education_learning": "Schools, degrees, studying, academic programs, learning methods",
+
+    "fashion_beauty": "Clothing, style, grooming, cosmetics, personal appearance",
+
+    "food_cooking": "Recipes, cooking, nutrition, ingredients, diet and food preparation",
+
+    "health_medical": "Diseases, symptoms, treatments, medications, healthcare and wellness",
+
+    "home_lifestyle": "Cleaning, home improvement, daily routines, household management",
+
+    "law_legal": "Laws, legality, regulations, legal rights, compliance, criminal offenses",
+
+    "language_translation": "Translation, grammar, language rules, vocabulary and usage",
+
+    "politics_government": "Public policy, elections, governance, geopolitics, political systems",
+
+    "science": "Physics, biology, chemistry, astronomy, scientific explanations and research",
+
+    "society_culture": "Cultural practices, social norms, demographics, traditions, social issues",
+
+    "sports_recreation": "Sports, fitness, exercise, outdoor recreation, athletic activities",
+
+    "technology": "Software, hardware, programming, AI, electronics, digital systems",
+
+    "travel_geography": "Travel planning, destinations, geography, relocation, tourism",
+
+    "relationships_social": "Dating, relationships, emotions, family dynamics, social interactions",
+
+    "consumer_services": "Finding or hiring services such as repairs, cleaning, installation, or local providers"
+  }
+}
