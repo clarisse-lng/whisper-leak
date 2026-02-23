@@ -1,0 +1,29 @@
+# Compte rendu 23/02/2026
+
+- Refaire l'analyse avec les labels pour s'assurer de que ça soit comparable entre OpenAI et LLM en local
+- Débuter à rédiger:
+    - C'est pas le seule article qui existe pour des fuites des données
+    - Le papier n'attacke pas le chiffrement, repose surtout sur le timing de réponse
+    - S'intereser dans les elements de taille variable (inter token delay), screen de tokenizer openAI, car pas évident
+    - Parler de la suite du projet: 
+        - Essayer whisperleak avec des classes plus differentes, faire attention au realisme
+        - Strategies de mitigation proposes.
+        - Essayer de reproduire ça en local
+        - Dire qu'il a un dataset disponible fourni
+    - Faire deux figures, explication d'un token, un example, screenshot de tokenizer sur des differentes examples
+        - t0 = ... 
+        - t1 = .......
+        - ...
+        - tn = ...........
+        Observer ça.
+    - Ça doit etre compris par un informaticien lambda sans experience sur des modeles.
+    - Motivation : 
+        1. Reproduire attacks déjà faites au passé
+        2. Rendre l'attack plus crédible
+    
+- Question interesante pour après le rapport: Impact sur la sortie de rajout des espaces 
+- Regarder la bibliotheque LangChain pour s'abstraire un peu de l'interface OpenAI => Choice: LangChain? OpenAI?
+- OpenRouter: Regarder a plus grande echelle (à explorer pour la fin du projet)
+- OLLAMA / MISTRAL: Faire pour faire tourner sur un cluster
+- Essayer de faire des tests sur des interfaces web vu que les attackes sont censées etre faites à l'utilisateur final: se posser la question des differentes interfaces / logiciels libres (idées)
+
