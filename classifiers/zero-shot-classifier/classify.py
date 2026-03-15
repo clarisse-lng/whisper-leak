@@ -4,8 +4,29 @@ from collections import Counter
 from pathlib import Path
 from openai import OpenAI
 
-DEFAULT_DATASET_FILE = "dataset-small.json"
-LABELS_FILE = "labels.json"
+DEFAULT_DATASET_FILE = "dataset-standard.json"
+LABEL_LIST = [
+    'inconclusive',
+    'animals',
+    'arts',
+    'autos',
+    'business',
+    'career',
+    'education',
+    'fashion',
+    'finance',
+    'food',
+    'government',
+    'health',
+    'hobbies',
+    'home',
+    'news',
+    'realestate',
+    'society',
+    'sports',
+    'tech',
+    'travel'
+]
 DEFAULT_OUTPUT_FILE = "label_counts.json"
 
 SYSTEM_PROMPT = """
@@ -20,11 +41,10 @@ Return ONLY the label name.
 
 
 def load_labels():
-    return json.loads(Path(LABELS_FILE).read_text(encoding="utf-8"))["labels"]
-
+    return LABEL_LIST
 
 def build_label_text(labels):
-    return "\n".join(f"- {k}: {v}" for k, v in labels.items())
+    return "\n".join(f"- {label}" for label in labels)
 
 
 def classify_query(client, query, label_text, valid_labels):
@@ -62,7 +82,7 @@ def classify_dataset(dataset_path, output_file=DEFAULT_OUTPUT_FILE):
     labels = load_labels()
 
     label_text = build_label_text(labels)
-    valid_labels = set(labels.keys())
+    valid_labels = set(labels)
 
     prompts = dataset["negative"]["prompts"]
 

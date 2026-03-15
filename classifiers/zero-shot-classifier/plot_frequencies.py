@@ -13,10 +13,11 @@ def main():
     values = list(counts.values())
 
     plt.figure()
-    plt.bar(labels, values)
+    plt.barh(labels, values)
     plt.xticks(rotation=45, ha="right")
-    plt.ylabel("Count")
-    plt.title("Label Frequency Distribution")
+    plt.xlabel("Quantite")
+    plt.ylabel("Labels")
+    plt.title("Distribution des labels par un classifieur zero shot")
     plt.tight_layout()
 
     plt.savefig(OUTPUT_IMAGE, dpi=300)
