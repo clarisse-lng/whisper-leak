@@ -1,0 +1,25 @@
+insister plus sur le contenu
+
+capturer les traces chiffrés avecc les donnees de l'article
+lancer les scripts fournis dans le git de l'article
+
+API openAI -> flag "include obfuscation" prévu pour flouter les reponses qu'on peut desactiver pour expérimenter et avoir un traffic chiffre non obfusqué (voir mail de M. Schwander)
+trouvable dans "create completion" aussi 
+
+ecrire un script et utiliser le code d'interception fourni
+
+classification des features
+
+modele a utiliser : moins cher d'oepnAI (et voir peut etre si modeles plus chers changent qqc ou pas)
+
+gradient boosting + LSTM dans l'article principal --> Reseau neurone, reseau neurone etat de l'art /Proche de ce qui est fait actuel, modele pas reseau de neurone complexe (bert)
+--> LSTM a voir avec M. Schwander (+ voir mail avec cours M1 sur ce sujet voir partie "Reseaux recurrents", voir qd meme les premieres seances rapidement, a revoir avec M. Schwander au prochain rdv)
+
+Utiliser lightBGM pour le moment, preparation des features qui peut etre compliquee
+--> Gradient boosting (on peut prendre n'importe quoi dans ce modele)
+
+ON peut utiliser perceptron kppv aussi pour utiliser un modele qu'on connait
+
+Voir Annexe de l'article pour détails des modèles utilisés
+
+Ce qu'on essaie d'observer et recolter
