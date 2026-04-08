@@ -1,0 +1,4 @@
+perceptron rosenblatt --> reseaux neurones sans couche cachee (ax+b aevc x a dimension n)
+
+MLP (multi layer perceptron) 
+
