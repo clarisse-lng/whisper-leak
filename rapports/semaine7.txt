@@ -1,0 +1,33 @@
+integrer dans la bibli du git ini avec sklearn KNN et perceptron
+
+/!\ padding --> voir le pretraitement dans les classifiers
+
+sklearn.nearest_neighbors.fit
+
+Rapport : 
+
+Prendre le 1er rapport en base --> 
+
+- Lancement en local du script à mettre sur git
+==> faire avec uv pour eviter des requirements (uv run à faire seulement par M. Schwander avec ollama)
+pyproject qu'on rajoute avec un fork
+chatbots ==> prendre une base dedans et changer baseurl sur ollama (avec un modele) localhost
+prendre la meme taille environ que gpt oss (3-4B) et on testera plus tard sur un plus grand modele pour voir si ca change bcp et si ca impacte la classif
+n'importe quel modele pour tester en local qui correspond aux requirements dont on a besoin (date du modele - d'un 1)
+glm4, mistral.......
+test sur une petite base d'exemples pour voir si ca marche
+test avec uv run !!!!! 
+
+14-15-501 ssh pour run en local
+
+regarder sur les api est ce quils ont des flags pour mitgations on/off
+sur les modeles utilises dans whisper leak et regarder s'ils ont implemente les mitigations
+
+erreur ou non ? sortie ou non ? 
+mettre des exemples avec les pcap et les cpatures qu'on a fait
+mettre un exemple avec et sans mitigation
+
+expliquer les diagrammes et ce qu'on veut montrer avec, les bien expliquer
+faire ref a des endroits dans la figure
+
+repeter les infos de l'intro 
