@@ -1,0 +1,44 @@
+Zotero --> Tuto RNN a faire tourner (implem de base avec pytorch)
+remplacable par GRU ou LSTM
+Tuto GRU (similaire a LSTM) a tester pour voir si on obtient de bons resultats
+exemples avec LSTM + GRU dans le nv lien
+
+RNN --> Features qui arrivent a la suite, pretraitement (taille, timing) a renormaliser
+
+Deux rec possibles : PArtir du debut et aller et aller vers la fin ou l'inverse 
+pytorch bidirectional = true ou false (Bi-LSTM, rec dans les deux sens)
+
+sous module git a faire pour fork 
+
+RNN marchera mieux que perceptron probablement
+
+Maj rapport avec nos nouveaux resultats
+
+changement de classe : IVG par ex
+ou usage (dmd de generation de code vs question banale) --> est ce que ca influence les resultats
+
+essayer une interception d'un dialogue au lieu d'un question/reponse
+
+rajouter en feature la longueur du prompt initial 
+
+est ce que les prompts sont de taille similaire ou diff et est ce que ca influence la longueur des reponses ou non 
+comparer longueur des prompts d'entree et longueur de sortie
+
+generer des prompts plus longs, plus courts (varier la taille des entrees)
+generer des datasets de generation de code (variabilite) avec discussion plutot que question/reponse
+prompts negatifs a rallonger pour 
+
+choix legitime de generer des datasets et le justifier 
+
+imaginer des cas d'usage realistes pour la prochaine
+
+est ce que le bruit est pertinentn dans le cas d'une discussion ou non
+
+patterns qu'on peut trouver usage d'outils dans les pcap etc ou non 
+tokens de raisonnement peut etre caches par oepnAI? visible ou non
+
+reflechir a des nouvelles classes et prompts positifs pour la prochaine fois
+
+generer dataset avec des dialogues plutot qu'un question/reponse
+
+dialogue a tester aussi
