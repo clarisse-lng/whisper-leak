@@ -2,3 +2,20 @@ perceptron rosenblatt --> reseaux neurones sans couche cachee (ax+b aevc x a dim
 
 MLP (multi layer perceptron) 
 
+pb de MLP : surapprentissafe car bcp de parametres a apprendre dans les couches cachees
+
+Besoin d'entrees de taille fixe mais WL taille variable 
+MOdeles capables de gerer des tailles variables ? (tree-boosting/padding)
+
+Reseaux recurrents : Regarde les entrees au fur et a mesure qu'elles arrivent
+Calcul fait a chaque etape -> Permet de gerer les entrees de taille variable, on regarde ce qui est obtenu a la fin
+
+LSTM ou GRU a utiliser avec Pytorch 
+fonction autograd pour obtenir automatiquement la descente de gradient
+Binary Cross Entropy sur les entrees
+Archi GRU a mettre en place
+
+RN -> h maj systematiquement, etat cache peut servir de cache, memorisation qui peut faire oublier des informations necessaires
+
+GRU maj pas systematiquement, si info pas interessante alors on ne memorise pas
+Hyper parametres à choisir -> Voir avec le prof
