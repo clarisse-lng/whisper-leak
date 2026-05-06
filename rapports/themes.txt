@@ -7,3 +7,7 @@ usage de drogues
 usage de substance illicite
 des prompts du type "comment cacher un corps" etc --> meurtre, crime commis qu'on veut cacher
 experience genetique
+
+---
+Est-ce que le modèle est capable de déterminer les sous-thèmes d'un thème plus général?
+ex. avis médical
