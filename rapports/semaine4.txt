@@ -1,0 +1,49 @@
+- > Redo an introduction
+
+	-> Do a explanation for a 'grand public' user that reads our work
+		-> Methodes d'accees au chatbot etc
+		-> le traffic et chiffre et par l'etat d'art blablablabla CEPENDANT on a un article recent qu' en observant un trafique chiffre tatata
+		-> suffise 
+		-> qu'est-ce que c'est vraiement infere et pourquoi est importante, donner des examples concrets
+		-> explotation des donnes claires
+		-> 
+	3eme / 4eme paragraph -> on n'attaque pas au https vraiement insister la dessous
+	à retener : etre robuste a quelqun qui ne lit pas completement tout, bien insister sur des facteurs clès
+	
+->  II section
+	-> le deuxieme paragraph le metre dans le ,,,
+	-> article principale, mette une reference
+	-> quell est l'interet de reproduire, metre en valeur qui c'est pas lancer un script, c'est aussi CREER UN ENVIRONNEMENT EXISTANT, dur, objectif interesant
+	-> repeater encore une fois on n'attaque pas un chiffrement mais vraiement un TIMING SIDECHANNEL ATTACK
+-> iii CONTRIBUTION
+	-> Pas parler de contribution, parler plutot de objectifs !
+	-> API / REQUETE CLIENT / REPONSE ESTIMÉE PAR LE SERVEUR TOKEN TOKEN (REPRENDRE UN PEU MA EXPLICATION SUR LE PREMIER ARTICLE GARDEFEU)
+	-> parler token -> expliquer qu'est-ce que c'est 
+	-> pas parler de token, plutot de morceau de reponse
+	-> faire des essais / prendre des examples
+
+-> IV
+	-> Comment ça marche -> qu'est-ce qu'on peut observer -> 
+
+	-> concluire partie iv, puis qu'est ce qu'on fait whisperleak
+	-> model utilise
+	4.6. -> experiences whisperleak
+
+
+
+	-> debut generique puis specialiser
+
+Creer une partie V -> Preeliminaires
+	-> le travail qu'on a fait
+	- on dit que la premiere partie de notre travail c'est de verifier le realisme et la difficulte des donnes disponibles
+	-> on reprend un peu c'est qu'on a fait et on augmente le contenu
+	-> expliquer comment sont generes les donnes syntethiques ça serait un truc trop facile et qu'ont un longeur de reponse 
+		-> cas realistes, cas pas realistes, on essaie des donnes avec des trucs realistes et pas realistes.
+		-> le zeroShort sert a apprendre a metre en oeuvre les API des fournissurs d'LLMs
+	-> expliquer que pour le moment on n'essaie pas de changer des 
+
+-> Effacer parefeus -> mettre un peu sur l'intro mais sans plus trop complique
+
+
+-> VII conclusions
+	-> essayer de refaire zeroShot et voir s'on peut conclure quelque chose et on a le droit de dire rien pour le moment
