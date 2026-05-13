@@ -1,0 +1,38 @@
+entrainer un modele en multiclasse avec les differentes architectures implementees
+
+touurner le multiclasse 
+
+expliquer dans le rapport la generation des prompts positifs avec un llm
+
+passer de la reproduction a qqc de plus interessant
+
+recueillir des donnees avec et sans mitigation pour voir si ca influe les resultats
+
+partie avec la discussion --> plus pertinent encore que le dataset initial
+
+rapport: 
+expliquer les mitigations si jamais ca a un impact (et les présenter) et si on aeu le tps de faire les xp sinon pas la peine
+expliquer les particularites des modeles utilises (sans faire de cours), lgbm gradient boosting, methodes d'nesembel
+aller a l'essentiel (ex: rnn plus simple des reseaxu recurrents, lstm dans l'article ver plus avancee)
+qu'est ce qu'il se passe avec qqc d'un peu plus plus simple ? 
+
+rajout d'une partie des experiences realisees 
+analyse exploratoire + analyse des resultats obtenues
+
+prioriser le meilleur modele pour le nv dataset mais sinon refaire tous les modeles
+tester avec lstm si on a le tps
+
+presentation:
+introduction --> de quoi on parle et pq on en parle? nos contributions (insister sur le nouveau daraset qui n'existe pas dans la litt scientifique)
+pq ce dataset est ineterssant ? on essaie une classif plus difficile que celle dans l'article
+
+dev --> expliquer la cnstruction des nouveaux datasets et les modeles. 
+classif binaire a classif multiclasse
+desription des modeles de facon commune (diff pas significative avec les res de l'article si l'ecart type est petit)
+partie resultats
+est ce que ca marche ou pas sur la mitigation (flag dans l'api openai a tourner en true au lieu de false)
+
+slides a faire + repet a programmer
+raconter le plus important et parler de nos contributionss
+
+partie experimentale ou la conclusion pour les choses qu'on a pas eu le tps de developper mais qui sont ineressantes sur le sujet
