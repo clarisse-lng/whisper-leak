@@ -1,0 +1,19 @@
+faire plusieurs essais sur les modeles pour faire la mediane/moyenne sur 5 essais si on a le tps pour comparer les AUC et AUPRC (AP) et voir la variance
+
+RNN normal que ca marche pas tres bien, essayer de changer l'arg patience pour voir si ca impacte les epochs (patience=10 pour tester)
+
+Test sur tous les themes, classifieur multiclasse
+meme modele que celui qu'on a utiliser donc gpt-4o
+
+Generation de code a implementer separement
+
+3 datasets :
+- Celui de base
+- Celui de generation de code 
+--> Simuler des discussions sur le code et d'autres sur autre chose pour avoir une comparaison avec des echanges aussi dans les negatifs
+- Celui multi-theme
+--> Garder les negatifs du dataset de base mais changer que les positifs
+
+Brouillon du rapport final dans 2 semaines pour pouvoir en discuter
+
+Dataset de discussion peut etre plus dure a realiser, essayer de generer les deux et en lacher un si manque de temps ou si blocage
