@@ -1,0 +1,60 @@
+Conversation Collection — Changes
+
+NEW FILES
+---------
+whisper_leak_collect_conversations.py
+  CLI script to run collection. Mirror of whisper_leak_collect.py but for multi-turn sessions.
+
+MODIFIED FILES
+--------------
+core/chatbot_utils.py
+  Added send_conversation(messages, temperature) to ChatbotBase.
+  Takes full message history as a list of {"role", "content"} dicts.
+  Raises NotImplementedError by default (existing chatbots unaffected).
+
+chatbots/gpt_4o_mini.py
+  Implemented send_conversation(). Passes accumulated message history to
+  the OpenAI API on each turn (same streaming pattern as send_prompt).
+
+core/model.py
+  Added ConversationCollector class. Runs each session as a single tcpdump
+  capture spanning all turns:
+    - Sends turns sequentially, building up message history
+    - Sleeps 2-5s between turns
+    - Filters PCAP by srcport == 443 (not local port) to capture all turns
+      regardless of TCP connection reuse
+    - Saves one data point per session with aggregated data_lengths / time_diffs
+    - Resumes from existing output if interrupted
+
+PROVIDED FILE
+-------------
+prompts/conversations/conversations.json
+  Session templates. 100 positive (Python DS) + 9,000 negative general (Quora)
+  + 1,000 negative code (JS/C++/SQL/Java/HTML). Each session has 3-5 turns;
+  Turn 1 is the root task, Turns 2-N are randomly ordered follow-ups.
+
+
+HOW PROMPTS WERE GENERATED
+---------------------------
+Turn structure: Turn 1 is always the root task (fixed). Turns 2-N are randomly
+sampled from a per-session follow-up pool and shuffled, so the classifier cannot
+learn positional patterns (e.g. "turn 3 always asks for unit tests").
+
+Positive (100 sessions, repeat=100 -> 10,000 captures)
+  100 Python Data Science root tasks written manually, covering: data loading &
+  cleaning, feature engineering, EDA, time series, NLP, model training, evaluation,
+  hyperparameter tuning, deep learning, visualisation, SQL+pandas, and deployment.
+  Each task has 4 handwritten follow-ups (optimization, bug fix, unit tests,
+  refactor/extend). At generation time, 2-4 are sampled and shuffled into turns 2-N.
+
+Negative general (9,000 sessions, repeat=1 -> 9,000 captures)
+  Turn 1 is a Quora question drawn from the existing prompt files in the repo
+  (prompts/standard/prompts.json and prompts/large1/). 9,000 sampled randomly.
+  Turns 2-N sampled from a fixed pool of 8 generic follow-ups ("expand on that",
+  "summarize as bullet points", "common misconceptions", etc.).
+
+Negative adversarial code (1,000 sessions, repeat=1 -> 1,000 captures)
+  5 non-Python themes x 200 root tasks each: JavaScript, C++, SQL, Java, HTML/CSS.
+  Root tasks and follow-up pools written manually per theme. Same shuffle logic
+  as positive. Goal: force the classifier to distinguish Python DS specifically,
+  not just "coding vs. general knowledge".
