@@ -1,0 +1,35 @@
+AUC: 0.5155689287238583
+AUPRC: 0.49209245422436754
+F1 Score: 0.0
+Recall: 0.0
+Precision: 0.0
+Accuracy: 0.5394888326041907
+Total: 4343
+Positives: 2000
+Negatives: 2343
+True Positives: 0
+True Negatives: 2343
+False Positives: 0
+False Negatives: 2000
+Median Number of Network Events: 139.0
+Avg Number of Network Events: 157.87497121805202
+StdDev Number of Network Events: 99.2249902479259
+Median Network Event Size: 721.0
+Avg Network Event Size: 641.9752789684547
+StdDev Network Event Size: 330.0602426736577
+Median Count of Response Chunks: 238.0
+Avg Count of Response Chunks: 264.2201243380152
+StdDev Count of Response Chunks: 170.16781112253997
+Mean Length of Response Chunks: 5.256242222276446
+Median Length of Response Chunks: 5.0
+Precision at 0.05 Recall: 0.6896551724137931
+Precision at 0.10 Recall: 0.5934718100890207
+Precision at 0.20 Recall: 0.4784688995215311
+Precision at 0.30 Recall: 0.46692607003891057
+Precision at 0.40 Recall: 0.4653868528214078
+Precision at 0.50 Recall: 0.4816955684007707
+Precision at 0.60 Recall: 0.461716044632551
+Precision at 0.70 Recall: 0.46143704680290054
+Precision at 0.80 Recall: 0.4624277456647399
+Precision at 0.90 Recall: 0.45977011494252873
+Precision at 1.00 Recall: 0.46051116739580933
