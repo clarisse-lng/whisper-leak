@@ -1,0 +1,76 @@
+garder 100 repeats
+
+pas besoin de lancer la classification zeroshot/local sur les prompts
+
+II.1 intro
+on veut pas decrire LLM mais décrire les elements utilises dans l'attaque 
+
+mettre la figure du fonctionnement de l'attaque
+"fonctionnement d'un chatbot grand public"
+
+echange message TLS 
+bien decrire dans la legende de la figure (rappel de la description plus detaillee dans le developpement)
+
+faciliter le travail du lecteur, etre plus explicite
+
+dire qu'un token = decoupage de la sequence
+
+preciser utilisation de l'archi client-serv
+
+tt le tps mettre des conclusions interemediaires 
+
+client-serveur <-> token a inverser
+
+II.1 3 mettre une figure pour representer les tokens 
+
+informations observables ==> caracteristiques donc pas besoin de sous partie caracteristique
+
+caracteirsiques a remplacer par contenu p.9
+
+"une requete simple comme bjr" --> mettre une figure pour montrer que c'est evident 
+WL --> Met plus en evidence que "ici c'est court" et "ici c'est long"
+
+p.10 algos qui dmd des entrees de taille fixe (mais ici c'est pas le cas donc on doit le mettre a la taille prevue) vs des algos ou c'est pas la peine d'uniformiser
+
+particulariser a une section precise
+
+dev l'explication l'apprentissage supervise
+
+annoncer les classes utilisees dans WL (
+
+II.3 
+
+taille fixe/taille var + resultats a dev dans les pts de ce que fait Whisper Leak 
+attque marche bien sur plsrs modeles et plsrs fournisseurs
+
+III.1 travaux importants pour que des mitigations soient implementees mtn mais c'est pas le premier article qui exploite ces features.
+
+but c'est pas d'analyser le smethodes c'est juste de l'analyse descriptive
+
+pertinent d'etendre a d'autres themes pour 
+
+VI.1 
+
+eviter de faire un cours sur les modeles utilises mais 
+
+KNN/Perceptron --> Taille fixe
+RNN --< Taille var
+Modeles assez simples 
+
+RNN 66> Methode de boosting et son implementation d eref est efficace pour ce type de donnees
+Compromis
+Famille des tabulaires assez puissant et evite des reseaux de neurones complexes
+
+transition a mettre a la fin des sections et au debut des introductions aussi
+
+mettre la liste des thematiques et des exemples
+
+
+
+
+
+
+
+
+
+
