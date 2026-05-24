@@ -21,11 +21,11 @@ for CONVERSATION (DockerSetup_conversation_prompts) :
 
 IF YOU ARE RUNNING IT FROM WHERE IT STOPPED:
 
-for STANDARD (DockerSetup_standard_prompts) : - 15 containers
+for STANDARD (DockerSetup_standard_prompts) :
 ---
 docker compose -p whisperleak-standard up --build
 
 
-for CONVERSATION (DockerSetup_conversation_prompts) : THIS ONE IS AT 25 CONTAINERS!!!
+for CONVERSATION (DockerSetup_conversation_prompts) : 
 ---
 docker compose -p whisperleak-conversations up --build
