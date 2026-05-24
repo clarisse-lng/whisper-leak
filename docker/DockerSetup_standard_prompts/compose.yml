@@ -1,0 +1,301 @@
+services:
+  copy-collector-1:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-1
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-1.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-1
+  copy-collector-2:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-2
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-2.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-2
+  copy-collector-3:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-3
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-3.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-3
+  copy-collector-4:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-4
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-4.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-4
+  copy-collector-5:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-5
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-5.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-5
+  copy-collector-6:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-6
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-6.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-6
+  copy-collector-7:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-7
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-7.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-7
+  copy-collector-8:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-8
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-8.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-8
+  copy-collector-9:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-9
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-9.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-9
+  copy-collector-10:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-10
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-10.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-10
+  copy-collector-11:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-11
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-11.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-11
+  copy-collector-12:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-12
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-12.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-12
+  copy-collector-13:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-13
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-13.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-13
+  copy-collector-14:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-14
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-14.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-14
+  copy-collector-15:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: copy-collector-15
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-15.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -p
+    - /app/prompts/collector.json
+    - -o
+    - data/copy-collector-15

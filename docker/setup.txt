@@ -1,0 +1,31 @@
+
+
+IF YOU NEED TO START FROM THE BEGINNING RUN THESE IN ORDER:
+(adjust container number if needed)
+
+for STANDARD (DockerSetup_standard_prompts) :
+---
+  cd "DockerSetup_standard_prompts"
+  python generate-compose.py -n 15 -c GPT4oMini
+  docker compose -p whisperleak-standard up --build
+
+
+for CONVERSATION (DockerSetup_conversation_prompts) : 
+---
+  cd "DockerSetup_conversation_prompts"
+  python generate-compose.py -n 15 -c GPT4oMini
+  docker compose -p whisperleak-conversations up --build
+
+
+
+
+IF YOU ARE RUNNING IT FROM WHERE IT STOPPED:
+
+for STANDARD (DockerSetup_standard_prompts) : - 15 containers
+---
+docker compose -p whisperleak-standard up --build
+
+
+for CONVERSATION (DockerSetup_conversation_prompts) : THIS ONE IS AT 25 CONTAINERS!!!
+---
+docker compose -p whisperleak-conversations up --build

@@ -1,0 +1,501 @@
+services:
+  collector-1:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-1
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-1.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-1
+  collector-2:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-2
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-2.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-2
+  collector-3:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-3
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-3.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-3
+  collector-4:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-4
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-4.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-4
+  collector-5:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-5
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-5.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-5
+  collector-6:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-6
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-6.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-6
+  collector-7:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-7
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-7.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-7
+  collector-8:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-8
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-8.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-8
+  collector-9:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-9
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-9.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-9
+  collector-10:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-10
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-10.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-10
+  collector-11:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-11
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-11.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-11
+  collector-12:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-12
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-12.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-12
+  collector-13:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-13
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-13.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-13
+  collector-14:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-14
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-14.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-14
+  collector-15:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-15
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-15.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-15
+  collector-16:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-16
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-16.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-16
+  collector-17:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-17
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-17.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-17
+  collector-18:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-18
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-18.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-18
+  collector-19:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-19
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-19.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-19
+  collector-20:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-20
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-20.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-20
+  collector-21:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-21
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-21.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-21
+  collector-22:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-22
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-22.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-22
+  collector-23:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-23
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-23.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-23
+  collector-24:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-24
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-24.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-24
+  collector-25:
+    build: .
+    restart: 'no'
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    user: root
+    env_file:
+    - .env
+    container_name: collector-25
+    volumes:
+    - ./data:/app/data
+    - ./prompts/collector-25.json:/app/prompts/collector.json:ro
+    command:
+    - -c
+    - GPT4oMini
+    - -s
+    - /app/prompts/collector.json
+    - -o
+    - data/collector-25

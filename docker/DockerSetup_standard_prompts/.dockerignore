@@ -1,0 +1,7 @@
+data/
+data_WITH_MITIGATIONS/
+models/
+.env
+__pycache__/
+**/__pycache__/
+*.pyc
