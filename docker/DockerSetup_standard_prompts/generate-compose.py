@@ -4,7 +4,7 @@ import yaml
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-n', '--num', type=int, default=None, help='Number of containers')
-parser.add_argument('-c', '--chatbot', default='GPT4oMiniObfuscation', help='Chatbot class name')
+parser.add_argument('-c', '--chatbot', default='GPT4oMini', help='Chatbot class name')
 parser.add_argument('-e', '--env-file', default='.env', help='Env file to use for API keys (default: .env)')
 parser.add_argument('-p', '--prefix', default='copy-collector', help='Container name prefix (default: copy-collector)')
 args = parser.parse_args()

@@ -4,7 +4,7 @@ import yaml
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-n', '--num', type=int, default=None, help='Number of containers')
-parser.add_argument('-c', '--chatbot', default='GPT4oMiniObfuscation', help='Chatbot class name')
+parser.add_argument('-c', '--chatbot', default='GPT4oMini', help='Chatbot class name')
 args = parser.parse_args()
 
 if args.num is None:
