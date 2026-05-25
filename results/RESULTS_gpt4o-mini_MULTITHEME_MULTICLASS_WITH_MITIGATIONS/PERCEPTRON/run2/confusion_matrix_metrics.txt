@@ -1,0 +1,27 @@
+AUC (macro OvR): 0.6301779481352566
+AUPRC (macro): 0.2360563441816379
+F1 Score (macro): 0.2490764337850901
+Recall (macro): 0.26159129692832767
+Precision (macro): 0.2594932413760902
+Accuracy: 0.29372001744439596
+Total: 18344
+Num Classes: 8
+Count class 0: 2344
+Count class 1: 2000
+Count class 2: 2000
+Count class 3: 4000
+Count class 4: 2000
+Count class 5: 2000
+Count class 6: 2000
+Count class 7: 2000
+Median Number of Network Events: 93.0
+Avg Number of Network Events: 115.49645660706499
+StdDev Number of Network Events: 77.81991346730224
+Median Network Event Size: 721.0
+Avg Network Event Size: 663.9279782995629
+StdDev Network Event Size: 225.22475158452667
+Median Count of Response Chunks: 157.0
+Avg Count of Response Chunks: 196.44837549062365
+StdDev Count of Response Chunks: 138.56882825968933
+Mean Length of Response Chunks: 5.491131627969317
+Median Length of Response Chunks: 5.0

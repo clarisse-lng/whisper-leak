@@ -1,0 +1,4045 @@
+{
+  "positive": {
+    "repeat": 100,
+    "sessions": [
+      {
+        "session_id": "pos_097",
+        "topic": "python_data_science",
+        "turns": [
+          "Write a function to perform stratified train/test split at the group level (e.g., by patient ID) ensuring no group appears in both train and test sets.",
+          "The stratification is based on sample-level labels, not group-level. Fix to compute group-level label distribution.",
+          "Some groups are too large and dominate the test set. Add a max-group-size cap with subsampling.",
+          "Extend to support k-fold group cross-validation preserving group boundaries.",
+          "Write unit tests for: single group, more groups than samples, all samples in same group."
+        ]
+      },
+      {
+        "session_id": "pos_098",
+        "topic": "python_data_science",
+        "turns": [
+          "Implement a function that applies random search over a scikit-learn pipeline, caching preprocessing steps between iterations to avoid redundant computation.",
+          "Extend to parallelize trials using joblib and verify the cache is thread-safe.",
+          "Write unit tests for: cache hit on second identical trial, cache miss after step change.",
+          "Switch from random search to halving random search to reduce total compute time."
+        ]
+      },
+      {
+        "session_id": "pos_099",
+        "topic": "python_data_science",
+        "turns": [
+          "Write a function to detect and report class label noise in a training dataset using cross-validated prediction confidence as a proxy for mislabeling probability.",
+          "The confidence threshold is hardcoded. Make it adaptive based on the per-class distribution of scores.",
+          "Add a comparison with the cleanlab library's confident learning approach.",
+          "Write unit tests for: clean dataset, fully noisy labels, single-class dataset."
+        ]
+      },
+      {
+        "session_id": "pos_100",
+        "topic": "python_data_science",
+        "turns": [
+          "Create a pandas function to compute a co-occurrence matrix from a column containing lists of items, normalize it by item frequency, and return the top-k co-occurring pairs.",
+          "Extend to also visualize the top-k pairs as a network graph using NetworkX.",
+          "The normalization is producing NaN for items that appear with no other items. Handle zero-frequency items."
+        ]
+      }
+    ]
+  },
+  "negative_general": {
+    "repeat": 1,
+    "sessions": [
+      {
+        "session_id": "neg_gen_08641",
+        "topic": "general_knowledge",
+        "turns": [
+          "Should I take the PMP Exam?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08642",
+        "topic": "general_knowledge",
+        "turns": [
+          "What will the Clinton administration do about Palestine?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08643",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is Goa a good place to go in summer holidays (at the end of May)?",
+          "What are the most common misconceptions people have about this topic?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08644",
+        "topic": "general_knowledge",
+        "turns": [
+          "Where was game 6 of the 2014 World Series held and what were the teams that played?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08645",
+        "topic": "general_knowledge",
+        "turns": [
+          "What made you work hard to get into IIT?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08646",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are common misconception girls have about boys?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08647",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is it scientifically possible to bring someone who's been dead for years (not buried) back to life?",
+          "What are the practical real-world applications or implications of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08648",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between an orgy and a groupsex?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08649",
+        "topic": "general_knowledge",
+        "turns": [
+          "Are there any antihistamines that are not anticholergenic?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08650",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I receive radio signals from Voyager 1?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08651",
+        "topic": "general_knowledge",
+        "turns": [
+          "Does Fight Club (the movie) appeal to women?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08652",
+        "topic": "general_knowledge",
+        "turns": [
+          "What kind of placements are available for Chemical Engineering Post Grad sftudents from NUS, SIngapore?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08653",
+        "topic": "general_knowledge",
+        "turns": [
+          "Did Michael Bubl\u00e9 sell out from a musical perspective?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08654",
+        "topic": "general_knowledge",
+        "turns": [
+          "If the US President at the spur of the moment decided to launch a nuclear missile as a first strike attack, could anyone stop him?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08655",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the ways to regain one's self confidence?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08656",
+        "topic": "general_knowledge",
+        "turns": [
+          "How are Aikido and Jiu-Jitsu different?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08657",
+        "topic": "general_knowledge",
+        "turns": [
+          "I bought Reliance Power shares post IPO, now after 8+ years its about a quarter of the original value. Should I sell or hold?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08658",
+        "topic": "general_knowledge",
+        "turns": [
+          "What do you think of English foo?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08659",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the fastest way to kill yourself?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08660",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some good websites or other media sources to find part-time/full-time jobs for retired professionals?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08661",
+        "topic": "general_knowledge",
+        "turns": [
+          "What one sentence can change a life?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08662",
+        "topic": "general_knowledge",
+        "turns": [
+          "How will common wear look like in a hundred years?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08663",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much does it cost to replace rotors?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08664",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the differences between iodine and betadine? When should you use them?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08665",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why are so many gay couples so muscular and buff? Is it evolutionary?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08666",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some CBSE grade 12 success stories for motivation?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08667",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is your hometown or city famous for?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08668",
+        "topic": "general_knowledge",
+        "turns": [
+          "Will a person be able to remember his education after a memory loss in an accident?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08669",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which is a better career, doctor or software engineer?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08670",
+        "topic": "general_knowledge",
+        "turns": [
+          "94% of white liberals believe in white genocide. What are your thoughts?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08671",
+        "topic": "general_knowledge",
+        "turns": [
+          "Materials Science and Engineering: My silicone cell phone case is yellowing. How do I make it clear/white again?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08672",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can you explain zero-point energy to a non-physicist?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08673",
+        "topic": "general_knowledge",
+        "turns": [
+          "What to say to someone who has lost a loved one?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08674",
+        "topic": "general_knowledge",
+        "turns": [
+          "What books did Tina Dabi refer?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08675",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best way to manage all your social media accounts?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08676",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why does my kitten bite me?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08677",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the .lock file extension?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08678",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why did the Nazis idolise blonde hair and blue eyes when the Nazi leaders were nothing like that?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08679",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the reason behind PM Modi's decision to abolish Rs 500 and 1000 currency notes from today (8 November 2016) midnight?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08680",
+        "topic": "general_knowledge",
+        "turns": [
+          "I chain smoke marijuana. How bad is this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08681",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why are my questions not answered?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08682",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best site like Experience Project?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08683",
+        "topic": "general_knowledge",
+        "turns": [
+          "Should I evolve or power up my Pok\u00e9mon first in Pok\u00e9mon GO?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08684",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who is rich India or Pakistan?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08685",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which is the best site to download books?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08686",
+        "topic": "general_knowledge",
+        "turns": [
+          "Have the issues with the Volkswagen DQ200 Automatic 7 Speed DSG transmission been fixed now?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08687",
+        "topic": "general_knowledge",
+        "turns": [
+          "What motivates Jeff Bezos?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08688",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between genotype and phenotype and what are some examples of phenotype and genotype?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08689",
+        "topic": "general_knowledge",
+        "turns": [
+          "How safe is Israel for travel?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08690",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much did Lance Armstrong pay to the Sunday Times to settle a libel case?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08691",
+        "topic": "general_knowledge",
+        "turns": [
+          "Has Hillary Clinton ever lied about anything?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08692",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do you check a Sears order status?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08693",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the most important things to look in a partner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08694",
+        "topic": "general_knowledge",
+        "turns": [
+          "What was the bomb that destroyed Hiroshima?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08695",
+        "topic": "general_knowledge",
+        "turns": [
+          "How an intermediate software developer seek a job?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08696",
+        "topic": "general_knowledge",
+        "turns": [
+          "How one should know that he/she completely prepare for CA final exam?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08697",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which are the best laptops under 50,000 INR for software engineering students?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08698",
+        "topic": "general_knowledge",
+        "turns": [
+          "What makes linux mint more user friendly than Ubuntu?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08699",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best possible deal on a membership at Crunch Fitness in SF?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08700",
+        "topic": "general_knowledge",
+        "turns": [
+          "Does the world treat you better if you are white?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08701",
+        "topic": "general_knowledge",
+        "turns": [
+          "When does the value of a painting go down?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08702",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are examples of cliques in high school?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08703",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which smartphone to be purchased in 2016?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08704",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who are the secretaries in the Central Government of India?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08705",
+        "topic": "general_knowledge",
+        "turns": [
+          "I am a JEE 2017 aspirant which books should I refer for PCM? Also, how many marks are needed to get admission into IIT?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08706",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is this good to move from core web development (.net) to Devops?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08707",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I learn to play music instrument while working?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08708",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is No fat capsules are usediull?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08709",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why are dogs afraid of fireworks?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08710",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some times Gandalf as been completely wrong?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08711",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do international cricketers deal with jet lag?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08712",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can cats catch cold from people?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08713",
+        "topic": "general_knowledge",
+        "turns": [
+          "Where do Pit Bulls come from?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08714",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much does it cost to buy a Coke in Yemen?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08715",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the the highest mountain in the world?",
+          "What are the practical real-world applications or implications of this?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08716",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the importance of cultural groups in Pakistan?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08717",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some worldbuilding and mapmaking tools?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08718",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is a solenoid?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08719",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the functions of mastoid processes?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08720",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which standard books should I follow to crack IES in Electrical Engineering?",
+          "What are the most common misconceptions people have about this topic?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08721",
+        "topic": "general_knowledge",
+        "turns": [
+          "Hav 4 years of teaching experience I belong to the mechanical stream want to shift to manufacturing industry do the industry consider my experience?",
+          "What are the practical real-world applications or implications of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08722",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do Tissot automatic watches work?",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08723",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I talk to an old friend?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08724",
+        "topic": "general_knowledge",
+        "turns": [
+          "What does Putin want?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08725",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some good online interior design courses?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08726",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can we improve shell scripting in UNIX environment?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08727",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is Subrata Roy a celebrity?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08728",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are differences in post synaptic density in excitatory vs inhibitory synapses?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08729",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is Jio ends after 31st Dec?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08730",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is Encom OS?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08731",
+        "topic": "general_knowledge",
+        "turns": [
+          "Any sponsership site whose payment method is other than paypal?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08732",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some good PowerPoint templates for an academic lecture?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08733",
+        "topic": "general_knowledge",
+        "turns": [
+          "Dating and Relationships in India: Are most Indian females virgins before their marriage? How difficult is it to find a virgin girl to marry in India?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08734",
+        "topic": "general_knowledge",
+        "turns": [
+          "Do INFPs often feel like they've been born on the wrong planet?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08735",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can you lose 100 pounds in 6 months?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08736",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can a SIM card have a virus? If so, what's the point of infecting them?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08737",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the biggest obstacle you have had to overcome in order to reach your goal?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08738",
+        "topic": "general_knowledge",
+        "turns": [
+          "Does the Hermione Time Turner Necklace from Universal break easily?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08739",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I stop talking with my ex-girlfriend?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08740",
+        "topic": "general_knowledge",
+        "turns": [
+          "Where can I find a revenue model of online aggregation education websites?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08741",
+        "topic": "general_knowledge",
+        "turns": [
+          "What was the purpose of J.J. Thomson's cathode ray tube experiments? What did they accomplish?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08742",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can cpl holder can join Indian navy?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08743",
+        "topic": "general_knowledge",
+        "turns": [
+          "How was your first experience on Quora? How do you feel now as a Top/Popular writer?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08744",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best way to clear the HP2-T16 exam?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08745",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why does Narendra Modi keep a beard? Is there a particular reason for his not shaving?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08746",
+        "topic": "general_knowledge",
+        "turns": [
+          "How hard is it to learn to play the harp?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08747",
+        "topic": "general_knowledge",
+        "turns": [
+          "What type of human cells undergo mitosis?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08748",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I prepare for GRE in 3 months?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08749",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is there a single list of all tech conferences around the world?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08750",
+        "topic": "general_knowledge",
+        "turns": [
+          "In the Tsar's Winter Palace, how were the halls heated for parties and balls? How was the heat comfortably maintained without thermostats?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08751",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can I install airbags and ABS in my car?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08752",
+        "topic": "general_knowledge",
+        "turns": [
+          "I love her and she loves me, but she doesn't want relationship because she believes she would destroy me. She says she can't repeat the same mistake as in a past relationship. She says she can't leave me at the same time she tells me she would miss me and will be in pain if I leave her. What should I do?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08753",
+        "topic": "general_knowledge",
+        "turns": [
+          "What should I do to work on Wall Street?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08754",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the advantages and disadvantages of state trading?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08755",
+        "topic": "general_knowledge",
+        "turns": [
+          "How should I prepare right from first year to crack Google Summer Of Code?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08756",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the circumstances husband and wife getting divorce?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08757",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why when we don't sleep much for a couple of days we start to shake and our heart starts beating really fast?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08758",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are your favourite Bob Dylan lyrics?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08759",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why does my iPhone 6s dies at 25-35% sometimes?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08760",
+        "topic": "general_knowledge",
+        "turns": [
+          "Do all muslims hate Prime Minister Narendra Modi and RSS?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08761",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some major differences between the India as portrayed on television vs. the real India?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08762",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I get investors for my business without giving them any ownership?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08763",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why is kickboxing considered good for self-defense?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08764",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is pink slime?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08765",
+        "topic": "general_knowledge",
+        "turns": [
+          "Does Facebook pay you for page likes in the same manner that YouTube pays you for views?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08766",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I transfer Gmail accounts?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08767",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can you donate blood at home?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08768",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I sell a property?",
+          "What are the most common misconceptions people have about this topic?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08769",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some things to do while visiting Palestine that a tourist might not know about?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08770",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who is Shahrukh Khan?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08771",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I find out if a song remix on YouTube is copyrighted?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08772",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the simple rules that I need to know to make my life better?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08773",
+        "topic": "general_knowledge",
+        "turns": [
+          "I decided to join coaching for ISCA CA Final. Can anyone help me to find out which faculty should I prefer Swapnil Patni or Amit Tated?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08774",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best way to develop empathy?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08775",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the benefits and effects if bathing daily in the morning?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08776",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much is 1 carat of diamond?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08777",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much is chiropractic care beneficial during pregnancy?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08778",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the total processes running on a system when a text editor with a c code is made to run in windows os?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08779",
+        "topic": "general_knowledge",
+        "turns": [
+          "How good is Nuremberg Institute of Technology?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08780",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is happening in Aleppo and why?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08781",
+        "topic": "general_knowledge",
+        "turns": [
+          "How many times can I give IIT jam?",
+          "What are the practical real-world applications or implications of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08782",
+        "topic": "general_knowledge",
+        "turns": [
+          "How are Sao Paulo and Rio de Janeiro different?",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08783",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best place to work, a startup or an MNC?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08784",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much does a philosopher get paid?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08785",
+        "topic": "general_knowledge",
+        "turns": [
+          "Does age matters in a relationship?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08786",
+        "topic": "general_knowledge",
+        "turns": [
+          "What will happen if I put salt directly on mouth ulcers. Will it kill that?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08787",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is it normal to want everyone to die?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08788",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the advantages of CSS exams?",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08789",
+        "topic": "general_knowledge",
+        "turns": [
+          "How did Sumeet Varma become so good at competitive programming?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08790",
+        "topic": "general_knowledge",
+        "turns": [
+          "What does preprocessor directive means in C++?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08791",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the best SEO social media strategies?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08792",
+        "topic": "general_knowledge",
+        "turns": [
+          "How large would the explosion be if a 747, transporting only barrels of oil, crashed into the ground?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08793",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is a graduate degree in urban planning worth it?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08794",
+        "topic": "general_knowledge",
+        "turns": [
+          "Where can I found best quality cupcake shops in Gold Cost?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08795",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between a Spartan and a samurai?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08796",
+        "topic": "general_knowledge",
+        "turns": [
+          "How should I approach a company for sponsorship?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08797",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I keep my hair having that always wet look?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08798",
+        "topic": "general_knowledge",
+        "turns": [
+          "What do you hypothesize dark energy to be? I don't mean answers like the cosmological constant. What do you think occurs physically?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08799",
+        "topic": "general_knowledge",
+        "turns": [
+          "Between Trump and Clinton who will win US presidential election?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08800",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do small business owners use CRM systems?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08801",
+        "topic": "general_knowledge",
+        "turns": [
+          "What did Ancient Chinese soldiers eat?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08802",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between braising steak and stewing steak? How are they similar?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08803",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the coloured dots on Ping Golf clubs? What do the color dots on Ping Golf Irons mean?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08804",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why do I feel so angry?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08805",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I get out of bed on the very moment I wake up?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08806",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the historical background of Chinese workers in Australian gold mines, and how does gold production compare to production in Indonesia?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08807",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can you get pregnant on high fertility days?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08808",
+        "topic": "general_knowledge",
+        "turns": [
+          "Do Mongolian people migrate from Mongolia nation into China? What are the reason for their migration?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08809",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do you clean your ear?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08810",
+        "topic": "general_knowledge",
+        "turns": [
+          "How did you finally clear up your acne?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08811",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best way to get Tinder matches to turn into Tinder dates?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08812",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is a state ID number?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08813",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is Nikolayev gas?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08814",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can sobriety be obtained and kept?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08815",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best online children savings account?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08816",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who will be the 2016-2017 NBA MVP?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08817",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can I buy MacBook Air with student discount at an Apple Store?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08818",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why is America the best country in the world?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08819",
+        "topic": "general_knowledge",
+        "turns": [
+          "What happens if I do not tip my waiter in the U.S.?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08820",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is one jar of Dymatize super mass gainer sufficient for some weight gaining?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08821",
+        "topic": "general_knowledge",
+        "turns": [
+          "Where can I find a good call record application for my android phone (Google Nexus 5) I tried all leading paid and free apps but no one is recording?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08822",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the importance of brand?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08823",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best diet plan and exercises to destroy belly fat completely?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08824",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which hurts the most? Saying something and wishing you had not, or saying nothing and wishing you had?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08825",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why do guys stare a lot at girls?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08826",
+        "topic": "general_knowledge",
+        "turns": [
+          "What will happen to my photos in my iPhone if I turn off iCloud Photo Library?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08827",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is light caused by?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08828",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some good use cases for Spring Integration?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08829",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some good books to learn JavaScript, jQuery, and AngularJS?",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08830",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the consequence of using a lower wattage power adapter with a laptop?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08831",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is bad design in mechanics?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08832",
+        "topic": "general_knowledge",
+        "turns": [
+          "How long can one be a software engineer?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08833",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between a panic attack and an anxiety attack?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08834",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I become good at coding?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08835",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I master body language reading and persuasion?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08836",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I practice to improve critical thinking?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08837",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best e-commerce marketplace software?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08838",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the silliest question ever asked?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08839",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some reasons to not vote for Bernie Sanders?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08840",
+        "topic": "general_knowledge",
+        "turns": [
+          "What's a scrappy, resourceful PR company/ individual in Los Angeles?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08841",
+        "topic": "general_knowledge",
+        "turns": [
+          "Has Groupon ever sued a merchant?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08842",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the OkCupid \"special blend\" for matching?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08843",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best software for Visuals synched to music?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08844",
+        "topic": "general_knowledge",
+        "turns": [
+          "How does Usain Bolt train?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08845",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can I download WWE 2k 16 for Android?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08846",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why isn't a war crime trial, N\u00fcremberg style, being considered for George W. Bush?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08847",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which are the 4 stroke bikes in India?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08848",
+        "topic": "general_knowledge",
+        "turns": [
+          "Where can I do skydiving?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08849",
+        "topic": "general_knowledge",
+        "turns": [
+          "Did Steve Jobs see potential in Augmented Reality?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08850",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the similarities between Ramayana and present day Indian politics?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08851",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between \u0421\u043f\u0430\u0441\u0438\u0431\u043e and \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08852",
+        "topic": "general_knowledge",
+        "turns": [
+          "In total, how many cadets are selected in the army, NDA, IMA or OTA?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08853",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I start my own business with low capital?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08854",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is complexity engineering?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08855",
+        "topic": "general_knowledge",
+        "turns": [
+          "How is the formula (d^2/162) for calculation of per metre weight of rebar derived?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08856",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can I close my Bank of America account online?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08857",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best way of moving a really big file from one computer to another?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08858",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is your take on the stock market?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08859",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why is \"Japan's Marine Day\" unknown in Tongo?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08860",
+        "topic": "general_knowledge",
+        "turns": [
+          "Bohemian Rhapsody: What is the meaning of Bismillah in \"Bismillah, no! We will not let him go!\"?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08861",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which are/were the big, bigger and/or biggest hypocritical theories, theses, hypotheses, and/or practices in/under/of/over the religion, Judaism?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08862",
+        "topic": "general_knowledge",
+        "turns": [
+          "What happened to Melissa McCarthy's voice?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08863",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why do other people inhale more air than others can?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08864",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between a castle, a palace, a chateau, a fort and a fortress?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08865",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the top 10 TV shows ever made?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08866",
+        "topic": "general_knowledge",
+        "turns": [
+          "How could you mentally hurt a psychopath?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08867",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the cultural faux pas of Gurgaon?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08868",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the solution to the problems of calculating national income?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08869",
+        "topic": "general_knowledge",
+        "turns": [
+          "Integration of x sin inverse x is?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08870",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some of the most mind-blowing facts about life?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08871",
+        "topic": "general_knowledge",
+        "turns": [
+          "What song plays over the end credits to the movie Ring 0: Birthday?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08872",
+        "topic": "general_knowledge",
+        "turns": [
+          "Have you ever lost yourself in life for a while and came back to yourself later?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08873",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the best and worst things about public transit in Francisco Morato, Brazil? How could it be improved?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08874",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the surgical strike?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08875",
+        "topic": "general_knowledge",
+        "turns": [
+          "What interesting topics can I talk to my ex-girlfriend about?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08876",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is it bad to leave benzoyl peroxide wash on your face overnight?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08877",
+        "topic": "general_knowledge",
+        "turns": [
+          "What should I gift my boyfriend who is a big fan of Game Of Thrones?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08878",
+        "topic": "general_knowledge",
+        "turns": [
+          "What do you think of people Donald Trump says nice things about? What do you think of Donald Trump's opinion of Modi?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08879",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why does my Labrador/Pug mix has separation anxiety when I leave my house?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08880",
+        "topic": "general_knowledge",
+        "turns": [
+          "If the P vs NP problem is solved, what would be its effect on our world?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08881",
+        "topic": "general_knowledge",
+        "turns": [
+          "How does 3rd wave feminism affect men\u2019s rights?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08882",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the authoritative dictionary for Samsung engineers that is useful for all Samsung device user demographics?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08883",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some ways to increase my seminal fluid?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08884",
+        "topic": "general_knowledge",
+        "turns": [
+          "What traffic laws in Montserrat are particularly hard for foreign drivers to get used to?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08885",
+        "topic": "general_knowledge",
+        "turns": [
+          "What will heaven be like for believers according to the Bible?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08886",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which one is correct, \"fill in a form\" or \"fill out a form\"?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08887",
+        "topic": "general_knowledge",
+        "turns": [
+          "Does medical insurance in the universities of Canada, the USA, and Europe cover medical conditions like hemophilia and thaelessimia for foreign graduate (PhD) students? What is the medical insurance cost to get these diseases covered?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08888",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much has Vanguard Index Funds invested in Goldman Sachs?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08889",
+        "topic": "general_knowledge",
+        "turns": [
+          "What does a hair transplant cost in Dubai?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08890",
+        "topic": "general_knowledge",
+        "turns": [
+          "What lies at the \"edge\" of our universe?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08891",
+        "topic": "general_knowledge",
+        "turns": [
+          "What should a middle-aged man wear in order to look stylish?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08892",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the 5 most important apps that should be in every Android phone?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08893",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I get a private mobile number in India?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08894",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can I take back resignation in tcs?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08895",
+        "topic": "general_knowledge",
+        "turns": [
+          "Can I change my eye colour using hypnosis?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08896",
+        "topic": "general_knowledge",
+        "turns": [
+          "What do we still not know about consciousness?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08897",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can you stop being an emotionless boob?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08898",
+        "topic": "general_knowledge",
+        "turns": [
+          "I have completed Infosys Training as High Performer and I have been posted to Hyderabad Pocharam campus.What will be my salary Structure?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08899",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the different factors that affect climate?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08900",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is 1/infinity, 0 or infinitesimal?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08901",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why are cricket fielding positions named as they are?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08902",
+        "topic": "general_knowledge",
+        "turns": [
+          "Sexual abuse on trains?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08903",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I connect to a WiFi using WPS PIN on android device?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08904",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can girls get rid of lice and nits?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08905",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between memorizing and learning?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08906",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some Clash of Clans clan names?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08907",
+        "topic": "general_knowledge",
+        "turns": [
+          "Do you like your parents?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08908",
+        "topic": "general_knowledge",
+        "turns": [
+          "I'm a dentist practicing for the last 14 years and want to change my profession. What are the possibilities?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08909",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some anime main characters that constantly are able to outsmart/amaze others?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08910",
+        "topic": "general_knowledge",
+        "turns": [
+          "What's the meaning of \"\u4e00\u4e0d\u505a\u4e8c\u4e0d\u4f11\"?",
+          "What are the practical real-world applications or implications of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08911",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I truly live well as a student in medical school?",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08912",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I do night photography with Nikon d3300 with 18-55mm lens?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08913",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is it like to be skinny in India?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08914",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I crack GATE 2017 in chemical engineering?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08915",
+        "topic": "general_knowledge",
+        "turns": [
+          "What charge does zinc have?",
+          "What are the practical real-world applications or implications of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08916",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the best Hiking boots for women?",
+          "What are the practical real-world applications or implications of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08917",
+        "topic": "general_knowledge",
+        "turns": [
+          "A girl I like asked me out. but she has a boyfriend. what does it mean?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08918",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I get my crush to talk to me/approach me, if I've never even talked to him before and I don't know him? Read the details for more info",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08919",
+        "topic": "general_knowledge",
+        "turns": [
+          "Being silience any problems occur?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08920",
+        "topic": "general_knowledge",
+        "turns": [
+          "Lets say I have a magic civil war era cannon that can be fired in a 0 bar vacuum and I fire it on the moon facing upward?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08921",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the books that a civil service aspirant should read?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08922",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best way to impress my boyfriend?",
+          "What are the practical real-world applications or implications of this?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08923",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the best places to visit in Lower Saxony, Germany?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08924",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is it considered slightly creepy or sad to upvote a ton of answers from the same writer on Quora?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08925",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who is said to be a 10X developer. How does one become a 10X developer?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08926",
+        "topic": "general_knowledge",
+        "turns": [
+          "How is a myopractic therapy performed?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08927",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is spark really important in a relationship? Can it work just with love?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08928",
+        "topic": "general_knowledge",
+        "turns": [
+          "To what degree has Dubai been built by slave labor?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08929",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which bike to buy if range is 60k-1lac\u20b9?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08930",
+        "topic": "general_knowledge",
+        "turns": [
+          "How good is Mika Singh?",
+          "What are the practical real-world applications or implications of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08931",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why does Quora do this \"marked as needing improvement?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08932",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the interview questions asked for the post of lecturer in Medicine?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08933",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which language is closer to Latin, Romanian or Italian?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08934",
+        "topic": "general_knowledge",
+        "turns": [
+          "Which is the best brand for earphones among JBL, Sennheiser, Philips, Sony and Skull Candy? Which model can you suggest in the range of 1.5k?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08935",
+        "topic": "general_knowledge",
+        "turns": [
+          "What would a business analyst do when he shifts to a different domain?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08936",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best photograph that you have ever taken with a celebrity?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08937",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is education really important?",
+          "What are the most common misconceptions people have about this topic?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08938",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some of the best luxury resorts in Jaipur?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08939",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why do your muscles get sore after working out?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08940",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are good web hosting companies?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08941",
+        "topic": "general_knowledge",
+        "turns": [
+          "Should I start kissing beggars?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08942",
+        "topic": "general_knowledge",
+        "turns": [
+          "How To know if you are with the right partner?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08943",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who will win the IPL in 2015?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08944",
+        "topic": "general_knowledge",
+        "turns": [
+          "When did social media posts captioned with \"#goals\"  began?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08945",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are the most important data structures in a tech interview?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08946",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the complete story of the Interstellar movie?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08947",
+        "topic": "general_knowledge",
+        "turns": [
+          "What kind of natural disasters affect Puerto Rico?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08948",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are capstone projects specifically in electronics and communication?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08949",
+        "topic": "general_knowledge",
+        "turns": [
+          "How is the general nature of Vietnamese people and their attitude towards expats especially coming from fellow Asian Muslim countries?",
+          "What are the most common misconceptions people have about this topic?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08950",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is it safe to change your eye color with quadible intergrity?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08951",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is it true that India has an unproportionate number of deformed people compared to other countries?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08952",
+        "topic": "general_knowledge",
+        "turns": [
+          "How does Ichigo controls his full hollow form?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08953",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is backbone.js dead??",
+          "What are the practical real-world applications or implications of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08954",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is Richfeel Clinic a good option for hair loss treatment?",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08955",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I get the best deals for a cruise?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08956",
+        "topic": "general_knowledge",
+        "turns": [
+          "Are the Dalits/Scheduled-Castes, religious majority or minority, in the Bharatiyan/Indian country?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08957",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between a mechanical engineering and engineering management? Are they the same or partial?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08958",
+        "topic": "general_knowledge",
+        "turns": [
+          "What will be the cutoff of NTSE 2017 Bihar?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08959",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the importance of having safety rules?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08960",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I recover a lost Gmail password?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08961",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do you begin to like yourself?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08962",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do I get over a 5 year relationship?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08963",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why didn't I like the movie The Revenant ?",
+          "What are the most common misconceptions people have about this topic?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08964",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is ferrite, cementite, austenite and pearlite?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08965",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the definition of being in love?",
+          "What are the practical real-world applications or implications of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08966",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the biggest lie somebody has told you?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08967",
+        "topic": "general_knowledge",
+        "turns": [
+          "How is living in Helsinki?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08968",
+        "topic": "general_knowledge",
+        "turns": [
+          "Between the ages of 20-25, am I a teenager or an adult?",
+          "How does this compare to related concepts or alternatives?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08969",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the nursing care plan for epigastric pain?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08970",
+        "topic": "general_knowledge",
+        "turns": [
+          "I am a mechanical engineering student from the DTU with an aggregate of 63% until the 6th semester. Do I have any chance of a job in any automobile company?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08971",
+        "topic": "general_knowledge",
+        "turns": [
+          "How do you differentiate between creativity and innovation?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08972",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some adaptations of long tailed otters?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08973",
+        "topic": "general_knowledge",
+        "turns": [
+          "How was your first kiss and how did it happen?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08974",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is operation quality?",
+          "How does this compare to related concepts or alternatives?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08975",
+        "topic": "general_knowledge",
+        "turns": [
+          "If you interview at a medical school and it takes them more than 2 weeks to get back to you, is it true that you haven't been accepted?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08976",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much does it cost to build a warehouse?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08977",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is there to do in Chiang Mai?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08978",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much does a gallon of fresh water weigh?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08979",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who are data analyst's?",
+          "What are the most common misconceptions people have about this topic?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08980",
+        "topic": "general_knowledge",
+        "turns": [
+          "Who is the best prime minister India has ever had?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08981",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why are Filipinos so racist?",
+          "What are the practical real-world applications or implications of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08982",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the best way to prepare for any competitive exam?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08983",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is one thing from your past you consider a big mistake and want to change? Why?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08984",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the half-life of knowledge for computer science?",
+          "What recent developments or research have changed our understanding of this?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08985",
+        "topic": "general_knowledge",
+        "turns": [
+          "Are german shepherds good with kids? Why or why not?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08986",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the most interesting thing about NYC?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08987",
+        "topic": "general_knowledge",
+        "turns": [
+          "Does scalar quantity have directions?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08988",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why do you hate the military?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide."
+        ]
+      },
+      {
+        "session_id": "neg_gen_08989",
+        "topic": "general_knowledge",
+        "turns": [
+          "How can I set my target?",
+          "What are the most common misconceptions people have about this topic?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08990",
+        "topic": "general_knowledge",
+        "turns": [
+          "What typically causes 18v chargers (Ryobi brand in this case) to malfunction?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08991",
+        "topic": "general_knowledge",
+        "turns": [
+          "What's the difference between table's fan and ceiling fan?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08992",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some examples of human environment interaction?",
+          "How does this compare to related concepts or alternatives?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08993",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the corporate culture like at Resources Connection? How is the culture different than other companies?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08994",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some examples of referent power?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?",
+          "How would an expert in this field explain it differently to a beginner?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08995",
+        "topic": "general_knowledge",
+        "turns": [
+          "How much does methamphetamine cost in Texas?",
+          "What recent developments or research have changed our understanding of this?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08996",
+        "topic": "general_knowledge",
+        "turns": [
+          "What is the difference between state minister and independent state minister?",
+          "How does this compare to related concepts or alternatives?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What are the practical real-world applications or implications of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08997",
+        "topic": "general_knowledge",
+        "turns": [
+          "Is matter the same thing as energy, only in different state?",
+          "What are the most common misconceptions people have about this topic?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08998",
+        "topic": "general_knowledge",
+        "turns": [
+          "Why do most economists believe that India will surpass China in the future?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Can you provide a step-by-step breakdown or a concrete case study?",
+          "What recent developments or research have changed our understanding of this?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_08999",
+        "topic": "general_knowledge",
+        "turns": [
+          "How fast is the Mach 20?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?",
+          "Summarize the key takeaways as a structured bullet-point guide.",
+          "How does this compare to related concepts or alternatives?"
+        ]
+      },
+      {
+        "session_id": "neg_gen_09000",
+        "topic": "general_knowledge",
+        "turns": [
+          "What are some examples of a competition?",
+          "How would an expert in this field explain it differently to a beginner?",
+          "Can you expand on that with more specific details and concrete examples?"
+        ]
+      }
+    ]
+  },
+  "negative_code": {
+    "repeat": 1,
+    "sessions": [
+      {
+        "session_id": "neg_html_css_161",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS design token system using @layer and CSS custom properties for a component library.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "I'm seeing a layout break in Safari. Fix the cross-browser compatibility issues.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_162",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS using @property to define an animatable custom property with type and initial value.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_163",
+        "topic": "html_css",
+        "turns": [
+          "Create a CSS nesting-based component stylesheet using the native CSS nesting syntax.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "I'm seeing a layout break in Safari. Fix the cross-browser compatibility issues."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_164",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS cascade layer architecture with base, components, and utilities layers.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_165",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS logical properties for a layout that supports both LTR and RTL text direction.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_166",
+        "topic": "html_css",
+        "turns": [
+          "Create a CSS variable-driven component that is themeable by just overriding a few root tokens.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "I'm seeing a layout break in Safari. Fix the cross-browser compatibility issues.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_167",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS color scheme that automatically switches between light and dark based on OS preference.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_168",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a scoped theme that overrides global tokens for just a specific section.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_169",
+        "topic": "html_css",
+        "turns": [
+          "Create a CSS font-size scale using CSS custom properties and rem units.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_170",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS z-index management system using named custom properties.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "I'm seeing a layout break in Safari. Fix the cross-browser compatibility issues.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_171",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS using @supports to provide a modern layout with a fallback for older browsers.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_172",
+        "topic": "html_css",
+        "turns": [
+          "Create a CSS scroll-snap container for a vertical one-page scrolling website.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_173",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS subgrid layout where child grid items align to grandparent grid tracks.",
+          "I'm seeing a layout break in Safari. Fix the cross-browser compatibility issues.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_174",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a sticky positioned element within a scroll-snap container.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_175",
+        "topic": "html_css",
+        "turns": [
+          "Create a CSS paint worklet (Houdini) that generates a custom background pattern.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_176",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS layout using aspect-ratio to maintain proportional elements without JS.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "I'm seeing a layout break in Safari. Fix the cross-browser compatibility issues.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_177",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS using overscroll-behavior to prevent scroll chaining in a modal.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_178",
+        "topic": "html_css",
+        "turns": [
+          "Create CSS for a multi-column text layout with a drop cap and pull quote float.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_179",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS anchor positioning layout (CSS Anchor Positioning API) for a tooltip.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_180",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a view transition animation between two page states using the View Transitions API.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_181",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS tooltip that positions itself above, below, left, or right using CSS anchor positioning.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_182",
+        "topic": "html_css",
+        "turns": [
+          "Create a CSS card component with an image header, body text, and a footer that pins to the bottom.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "Refactor the CSS using custom properties (CSS variables) for theming."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_183",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a responsive pricing toggle that switches between monthly and annual pricing.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_184",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS timeline with vertical connector lines and alternating event cards.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_185",
+        "topic": "html_css",
+        "turns": [
+          "Create CSS for a notification dropdown that pops up from a bell icon with a badge count.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_186",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a status indicator dot with a pulsing animation for live status.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_187",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS skill bar component that animates to a percentage width on page load.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_188",
+        "topic": "html_css",
+        "turns": [
+          "Create CSS for a breadcrumb trail with chevron separators and a truncated middle section.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Refactor the CSS using custom properties (CSS variables) for theming."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_189",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a tag cloud where font size reflects tag frequency.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_190",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS media player controls bar with a progress scrubber and volume slider.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_191",
+        "topic": "html_css",
+        "turns": [
+          "Create CSS for a chat bubble component with a tail arrow and alternating alignment.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_192",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a responsive login card centered in the viewport with a logo above.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_193",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS data badge that overlays a corner of an element with a number count.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_194",
+        "topic": "html_css",
+        "turns": [
+          "Create CSS for a full-screen search overlay that fades in over the page.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_195",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for a collapsible FAQ section using the details/summary HTML elements.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Refactor the CSS using custom properties (CSS variables) for theming."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_196",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS photo caption overlay that appears on image hover with a smooth fade.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_197",
+        "topic": "html_css",
+        "turns": [
+          "Create CSS for a floating help button that stays fixed in the bottom-right corner.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Extend the component to support a dark mode using the prefers-color-scheme media query."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_198",
+        "topic": "html_css",
+        "turns": [
+          "Write CSS for an error boundary component with a warning icon and retry button.",
+          "Add CSS animations and transitions with prefers-reduced-motion media query support.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Refactor the CSS using custom properties (CSS variables) for theming.",
+          "Add print styles to ensure the layout prints correctly on A4 paper."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_199",
+        "topic": "html_css",
+        "turns": [
+          "Build a CSS skeleton loader that matches the exact shape of a profile card.",
+          "Add WCAG 2.1 AA accessibility: ARIA roles, keyboard navigation, and sufficient color contrast.",
+          "Refactor the CSS using custom properties (CSS variables) for theming."
+        ]
+      },
+      {
+        "session_id": "neg_html_css_200",
+        "topic": "html_css",
+        "turns": [
+          "Create CSS for a side drawer that slides in from the left with a dark overlay backdrop.",
+          "Add print styles to ensure the layout prints correctly on A4 paper.",
+          "Optimize for Core Web Vitals: reduce layout shift and improve paint performance.",
+          "Make this fully responsive for mobile, tablet, and desktop using CSS Grid and Flexbox."
+        ]
+      }
+    ]
+  }
+}
